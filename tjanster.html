@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tjänster - Lillsund Entreprenad AB</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #34495e;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #2c3e50;
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service {
+            flex: 1;
+            min-width: 250px;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        /* Bestäm ordningen på tjänsterna */
+        .service:nth-child(1) { order: 1; } /* Biobränsle → längst vänster */
+        .service:nth-child(2) { order: 2; } /* Skogstjänster → mitten */
+        .service:nth-child(3) { order: 3; } /* Vedproduktion och sågning → längst höger */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @media(max-width: 600px) {
+            .services {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tjänster - Lillsund Entreprenad AB</h1>
+</header>
+
+<nav>
+    <a href="index.html">Start</a>
+    <a href="tjanster.html">Tjänster</a>
+    <a href="om.html">Om oss</a>
+    <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<section class="container">
+    <h2>Våra Tjänster</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Biobränsle</h3>
+            <p>Produktion och leverans av biobränsle för energi och värme.</p>
+        </div>
+        <div class="service">
+            <h3>Skogstjänster</h3>
+            <p>Averkning, gallring och klippning av åkermarker mm.</p>
+        </div>
+        <div class="service">
+            <h3>Vedproduktion och sågning</h3>
+            <p>Vedproduktion och sågning av virke.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Lillsund Entreprenad AB</p>
+</footer>
+
+</body>
+</html>
